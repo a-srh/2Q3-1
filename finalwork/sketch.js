@@ -62,29 +62,29 @@ function draw()
 
     textAlign(CENTER, CENTER);
 
-    textSize(50);
+    textSize(80);
     fill(255, 255, 0);
     text("Find the MOUSE!!", width/2, height/4);
 
     textSize(25);
     fill(255);
-    text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height*1/3);
+    text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height*1/3 + 30);
 
     textSize(25);
     fill(255);
-    text("・ネズミを1秒間照らすと捕獲できる！", width/2, height*1/3 + 50);
+    text("・ネズミを1秒間照らすと捕獲できる！", width/2, height*1/3 + 80);
 
     textSize(25);
     fill(255);
-    text("・最初の3秒でネズミの動きを覚えるのだ！", width/2, height/2);
+    text("・最初の3秒でネズミの動きを覚えるのだ！", width/2, height/2 + 30);
 
     textSize(25);
     fill(255);
-    text("Level 1-3", width/2, height/2 + 50);
+    text("Level 1-3", width/2, height/2 + 80);
 
     textSize(30);
     fill(255);
-    text("SPACEキーを押して始めよう", width/2, height*3/4 + 100);
+    text("SPACEキーを押して始めよう", width/2, height*3/4 + 80);
 
     return;
   }
@@ -118,7 +118,7 @@ function draw()
     if(elapsed < 3)
     {
       fill(255);
-      ellipse(chu.x, chu.y, 10, 10);
+      ellipse(chu.x, chu.y, 15, 15);
     }
     else
     {
@@ -126,7 +126,7 @@ function draw()
       let d = dist(mouseX, mouseY, chu.x, chu.y);
       //
         //
-       if(!chu.found && d < 20)
+       if(!chu.found && d < 30)
        {
         if(chu.lightStart == 0)
             {
@@ -146,12 +146,12 @@ function draw()
        if(chu.found)
         {
           fill(255, 0, 0);
-          ellipse(chu.x, chu.y, 10, 10);
+          ellipse(chu.x, chu.y, 15, 15);
         }
-        else if(d < 20)
+        else if(d < 30)
         {
           fill(255);
-          ellipse(chu.x, chu.y, 10, 10);
+          ellipse(chu.x, chu.y, 15, 15);
         }
       }
 
@@ -166,7 +166,7 @@ function draw()
             }
 
          }
-         textSize(20);
+         textSize(25);
          fill(255);
          text("Found: " + foundCount + "/" + chus.length, width/8 - 50, height/8);
 
@@ -192,7 +192,7 @@ function draw()
               for(let chu of chus)
               {
                 fill(255, 0, 0);
-                ellipse(chu.x, chu.y, 10, 10);
+                ellipse(chu.x, chu.y, 15, 15);
               }
 
               fill(255, 255, 0);
