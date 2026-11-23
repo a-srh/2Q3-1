@@ -20,17 +20,17 @@ function setup()
   if(level == 1)
   {
     chuCount = 1;
-    speed = 2;
+    speed = 1.5;
   }
   else if(level == 2)
   {
     chuCount = 3;
-    speed = 2.5;
+    speed = 2;
   }
   else if(level == 3)
   {
     chuCount = 3;
-    speed = 4;
+    speed = 3;
   }
 
 //chu(mouse)を3体作る
