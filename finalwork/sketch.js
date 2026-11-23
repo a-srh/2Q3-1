@@ -62,27 +62,27 @@ function draw()
 
     textAlign(CENTER, CENTER);
 
-    textSize(100);
+    textSize(50);
     fill(255, 255, 0);
     text("Find the MOUSE!!", width/2, height/3);
 
-    textSize(35);
+    textSize(25);
     fill(255);
     text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height/2);
 
-    textSize(35);
+    textSize(25);
     fill(255);
     text("・ネズミを1秒間照らすと捕獲できる！", width/2, height/2 + 140);
 
-    textSize(35);
+    textSize(25);
     fill(255);
     text("・最初の3秒でネズミの動きを覚えるのだ！", width/2, height/2 + 280);
 
-    textSize(35);
+    textSize(25);
     fill(255);
     text("Level 1-3", width/2, height/2 + 420);
 
-    textSize(60);
+    textSize(30);
     fill(255);
     text("SPACEキーを押して始めよう", width/2, height*3/4 + 50);
 
@@ -118,7 +118,7 @@ function draw()
     if(elapsed < 3)
     {
       fill(255);
-      ellipse(chu.x, chu.y, 40, 40);
+      ellipse(chu.x, chu.y, 20, 20);
     }
     else
     {
@@ -126,7 +126,7 @@ function draw()
       let d = dist(mouseX, mouseY, chu.x, chu.y);
       //
         //
-       if(!chu.found && d < 100)
+       if(!chu.found && d < 30)
        {
         if(chu.lightStart == 0)
             {
@@ -146,12 +146,12 @@ function draw()
        if(chu.found)
         {
           fill(255, 0, 0);
-          ellipse(chu.x, chu.y, 40, 40);
+          ellipse(chu.x, chu.y, 20, 20);
         }
-        else if(d < 100)
+        else if(d < 50)
         {
           fill(255);
-          ellipse(chu.x, chu.y, 40, 40);
+          ellipse(chu.x, chu.y, 20, 20);
         }
       }
 
@@ -166,7 +166,7 @@ function draw()
             }
 
          }
-         textSize(30);
+         textSize(20);
          fill(255);
          text("Found: " + foundCount + "/" + chus.length, width/8 - 50, height/8 - 130);
 
@@ -180,7 +180,7 @@ function draw()
                 background(0);
 
                 fill(255, 255, 0);
-                textSize(90);
+                textSize(50);
                 textAlign(CENTER, CENTER);
                 text("YOU WIN!!", width/2, height/2);
 
@@ -192,21 +192,21 @@ function draw()
               for(let chu of chus)
               {
                 fill(255, 0, 0);
-                ellipse(chu.x, chu.y, 40, 40);
+                ellipse(chu.x, chu.y, 20, 20);
               }
 
               fill(255, 255, 0);
-              textSize(90);
+              textSize(50);
               textAlign(CENTER, CENTER);
               text("LEVEL" + level + " CLEAR!", width/2, height/2);
 
-              textSize(40);
+              textSize(30);
               text("Press S to start the Next Level...", width/2, height/2 + 200);
 
               return;
             }
 
-            textSize(60);
+            textSize(30);
             fill(255);
             text("LEVEL" + level, width/2, height/8 - 110);
   }
@@ -219,11 +219,11 @@ function draw()
     {  //電灯を書く
       noStroke();
       fill(255, 255, 150, 10);
-      circle(mouseX, mouseY, 400);
+      circle(mouseX, mouseY, 200);
       fill(255, 255, 150, 20);
-      circle(mouseX, mouseY, 300);
+      circle(mouseX, mouseY, 150);
       fill(255, 255, 130, 80);
-      circle(mouseX, mouseY, 130);
+      circle(mouseX, mouseY, 65);
     }
 
 }
