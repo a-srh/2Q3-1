@@ -68,23 +68,23 @@ function draw()
 
     textSize(25);
     fill(255);
-    text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height*2/3);
+    text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height*1/3);
 
     textSize(25);
     fill(255);
-    text("・ネズミを1秒間照らすと捕獲できる！", width/2, height*2/3 + 50);
+    text("・ネズミを1秒間照らすと捕獲できる！", width/2, height*1/3 + 50);
 
     textSize(25);
     fill(255);
-    text("・最初の3秒でネズミの動きを覚えるのだ！", width/2, height/2 + 50);
+    text("・最初の3秒でネズミの動きを覚えるのだ！", width/2, height/2);
 
     textSize(25);
     fill(255);
-    text("Level 1-3", width/2, height/2 + 100);
+    text("Level 1-3", width/2, height/2 + 50);
 
     textSize(30);
     fill(255);
-    text("SPACEキーを押して始めよう", width/2, height*3/4 + 50);
+    text("SPACEキーを押して始めよう", width/2, height*3/4 + 100);
 
     return;
   }
