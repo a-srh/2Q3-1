@@ -62,27 +62,27 @@ function draw()
 
     textAlign(CENTER, CENTER);
 
-    textSize(200);
+    textSize(100);
     fill(255, 255, 0);
     text("Find the MOUSE!!", width/2, height/3);
 
-    textSize(70);
+    textSize(35);
     fill(255);
     text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height/2);
 
-    textSize(70);
+    textSize(35);
     fill(255);
     text("・ネズミを1秒間照らすと捕獲できる！", width/2, height/2 + 140);
 
-    textSize(70);
+    textSize(35);
     fill(255);
     text("・最初の3秒でネズミの動きを覚えるのだ！", width/2, height/2 + 280);
 
-    textSize(70);
+    textSize(35);
     fill(255);
     text("Level 1-3", width/2, height/2 + 420);
 
-    textSize(120);
+    textSize(60);
     fill(255);
     text("SPACEキーを押して始めよう", width/2, height*3/4 + 50);
 
@@ -166,7 +166,7 @@ function draw()
             }
 
          }
-         textSize(60);
+         textSize(30);
          fill(255);
          text("Found: " + foundCount + "/" + chus.length, width/8 - 50, height/8 - 130);
 
@@ -180,7 +180,7 @@ function draw()
                 background(0);
 
                 fill(255, 255, 0);
-                textSize(180);
+                textSize(90);
                 textAlign(CENTER, CENTER);
                 text("YOU WIN!!", width/2, height/2);
 
@@ -196,17 +196,17 @@ function draw()
               }
 
               fill(255, 255, 0);
-              textSize(180);
+              textSize(90);
               textAlign(CENTER, CENTER);
               text("LEVEL" + level + " CLEAR!", width/2, height/2);
 
-              textSize(80);
+              textSize(40);
               text("Press S to start the Next Level...", width/2, height/2 + 200);
 
               return;
             }
 
-            textSize(120);
+            textSize(60);
             fill(255);
             text("LEVEL" + level, width/2, height/8 - 110);
   }
