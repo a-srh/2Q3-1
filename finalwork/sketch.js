@@ -118,7 +118,7 @@ function draw()
     if(elapsed < 3)
     {
       fill(255);
-      ellipse(chu.x, chu.y, 20, 20);
+      ellipse(chu.x, chu.y, 10, 10);
     }
     else
     {
@@ -126,7 +126,7 @@ function draw()
       let d = dist(mouseX, mouseY, chu.x, chu.y);
       //
         //
-       if(!chu.found && d < 30)
+       if(!chu.found && d < 20)
        {
         if(chu.lightStart == 0)
             {
@@ -146,12 +146,12 @@ function draw()
        if(chu.found)
         {
           fill(255, 0, 0);
-          ellipse(chu.x, chu.y, 20, 20);
+          ellipse(chu.x, chu.y, 10, 10);
         }
-        else if(d < 50)
+        else if(d < 20)
         {
           fill(255);
-          ellipse(chu.x, chu.y, 20, 20);
+          ellipse(chu.x, chu.y, 10, 10);
         }
       }
 
@@ -168,7 +168,7 @@ function draw()
          }
          textSize(20);
          fill(255);
-         text("Found: " + foundCount + "/" + chus.length, width/8 - 50, height/8 - 130);
+         text("Found: " + foundCount + "/" + chus.length, width/8 - 50, height/8);
 
 
         //ネズミ全員発見
@@ -192,7 +192,7 @@ function draw()
               for(let chu of chus)
               {
                 fill(255, 0, 0);
-                ellipse(chu.x, chu.y, 20, 20);
+                ellipse(chu.x, chu.y, 10, 10);
               }
 
               fill(255, 255, 0);
@@ -208,7 +208,7 @@ function draw()
 
             textSize(30);
             fill(255);
-            text("LEVEL" + level, width/2, height/8 - 110);
+            text("LEVEL" + level, width/2, height/8);
   }
 
   
@@ -219,11 +219,11 @@ function draw()
     {  //電灯を書く
       noStroke();
       fill(255, 255, 150, 10);
-      circle(mouseX, mouseY, 200);
+      circle(mouseX, mouseY, 100);
       fill(255, 255, 150, 20);
-      circle(mouseX, mouseY, 150);
+      circle(mouseX, mouseY, 75);
       fill(255, 255, 130, 80);
-      circle(mouseX, mouseY, 65);
+      circle(mouseX, mouseY, 30);
     }
 
 }
