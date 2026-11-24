@@ -20,17 +20,17 @@ function setup()
   if(level == 1)
   {
     chuCount = 1;
-    speed = 1.5;
+    speed = 1;
   }
   else if(level == 2)
   {
     chuCount = 3;
-    speed = 2;
+    speed = 1.5;
   }
   else if(level == 3)
   {
     chuCount = 3;
-    speed = 3;
+    speed = 2.5;
   }
 
 //chu(mouse)を3体作る
@@ -68,7 +68,7 @@ function draw()
 
     textSize(25);
     fill(255);
-    text("・暗闇の中から3匹のネズミを見つけ出せ！", width/2, height*1/3 + 30);
+    text("・暗闇の中から全てのネズミを見つけ出せ！", width/2, height*1/3 + 30);
 
     textSize(25);
     fill(255);
