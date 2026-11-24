@@ -118,7 +118,7 @@ function draw()
     if(elapsed < 3)
     {
       fill(255);
-      ellipse(chu.x, chu.y, 15, 15);
+      ellipse(chu.x, chu.y, 20, 20);
     }
     else
     {
@@ -126,7 +126,7 @@ function draw()
       let d = dist(mouseX, mouseY, chu.x, chu.y);
       //
         //
-       if(!chu.found && d < 30)
+       if(!chu.found && d < 45)
        {
         if(chu.lightStart == 0)
             {
@@ -146,12 +146,12 @@ function draw()
        if(chu.found)
         {
           fill(255, 0, 0);
-          ellipse(chu.x, chu.y, 15, 15);
+          ellipse(chu.x, chu.y, 20, 20);
         }
-        else if(d < 30)
+        else if(d < 45)
         {
           fill(255);
-          ellipse(chu.x, chu.y, 15, 15);
+          ellipse(chu.x, chu.y, 20, 20);
         }
       }
 
@@ -192,7 +192,7 @@ function draw()
               for(let chu of chus)
               {
                 fill(255, 0, 0);
-                ellipse(chu.x, chu.y, 15, 15);
+                ellipse(chu.x, chu.y, 20, 20);
               }
 
               fill(255, 255, 0);
